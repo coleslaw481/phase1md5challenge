@@ -56,3 +56,55 @@ wget https://raw.githubusercontent.com/briandoconnor/dockstore-tool-md5sum/maste
 ```Bash
 time cwl-runner --non-strict Dockstore.cwl test.json
 ```
+
+The answer will be stored in **md5sum.txt** file
+
+Example output from running above command:
+
+```Bash
+Resolved 'Dockstore.cwl' to 'file:///home/vagrant/Dockstore.cwl'
+['docker', 'pull', 'quay.io/briandoconnor/dockstore-tool-md5sum:1.0.2']
+1.0.2: Pulling from briandoconnor/dockstore-tool-md5sum
+8aec416115fd: Pull complete 
+695f074e24e3: Pull complete 
+946d6c48c2a7: Pull complete 
+bc7277e579f0: Pull complete 
+2508cbcde94b: Pull complete 
+a3ed95caeb02: Pull complete 
+b1f19f922e23: Pull complete 
+3fa75a7b6e87: Pull complete 
+Digest: sha256:23bf499256200ecb7f841304325348fa4b8b0d822b36ab6363c4c6ed857d120f
+Status: Downloaded newer image for quay.io/briandoconnor/dockstore-tool-md5sum:1.0.2
+[job Dockstore.cwl] /tmp/tmp9juTjX$ docker \
+    run \
+    -i \
+    --volume=/home/vagrant/md5sum.input:/var/lib/cwl/stg3b40cc3a-1294-44f8-8022-222ceb328527/md5sum.input:ro \
+    --volume=/tmp/tmp9juTjX:/var/spool/cwl:rw \
+    --volume=/tmp/tmpgPSGtz:/tmp:rw \
+    --workdir=/var/spool/cwl \
+    --read-only=true \
+    --user=1000 \
+    --rm \
+    --env=TMPDIR=/tmp \
+    --env=HOME=/var/spool/cwl \
+    quay.io/briandoconnor/dockstore-tool-md5sum:1.0.2 \
+    /bin/my_md5sum \
+    /var/lib/cwl/stg3b40cc3a-1294-44f8-8022-222ceb328527/md5sum.input
+[job Dockstore.cwl] completed success
+{
+    "output_file": {
+        "format": "http://edamontology.org/data_3671", 
+        "checksum": "sha1$1250816c19c6f5524c5366b56c7a1eed6f3c3ab3", 
+        "basename": "md5sum.txt", 
+        "location": "file:///home/vagrant/md5sum.txt", 
+        "path": "/home/vagrant/md5sum.txt", 
+        "class": "File", 
+        "size": 33
+    }
+}
+Final process status is success
+
+real	0m26.730s
+user	0m1.292s
+sys	0m0.261s
+```
