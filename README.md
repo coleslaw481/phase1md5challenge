@@ -4,10 +4,10 @@
 [virtualbox]: https://www.virtualbox.org/wiki/VirtualBox
 [git]: https://git-scm.com/
 [centos]: https://www.centos.org/
-
+[md5sumtool]: https://dockstore.org/containers/quay.io/briandoconnor/dockstore-tool-md5sum
 # phase1md5challenge
 
-This source tree contains a [Vagrant][vagrant] configuration which creates a [Centos 7][centos] virtual machine with [cwl-runner][cwlrunner] and all of its needed prerequesites installed. This allows the user to bring up the virtual machine and invoke a few commands to run the md5sum workflow.
+This source tree contains a [Vagrant][vagrant] configuration which creates a [Centos 7][centos] virtual machine with [cwl-runner][cwlrunner] and all of its needed prerequesites installed. This allows the user to bring up the virtual machine and invoke a few commands to run the [md5sum workflow][md5sumtool].
 
 Contains files for [GA4GH Tool Execution Challenge][challenge].
 
