@@ -26,12 +26,12 @@ Below are steps to run the md5sum workflow in a [Vagrant][vagrant] virtual machi
 
 #### Step 1) Download configuration files
 
-If [Git][git] command line tool is installed run the following from a terminal
 
 ```Bash
 git clone https://github.com/coleslaw481/phase1md5challenge.git
 cd phase1md5challenge
 ```
+**NOTE:** If [Git][git] command line tool is **NOT** available simply download this source tree via https://github.com/coleslaw481/phase1md5challenge, unzip the downloaded file, cd into the unzipped directory, and continue with step 2.
 
 #### Step 2) Spin up the virtual machine with [Vagrant][vagrant]
 
