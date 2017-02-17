@@ -3,6 +3,8 @@
 [vagrant]: https://www.vagrantup.com/
 [virtualbox]: https://www.virtualbox.org/wiki/VirtualBox
 [git]: https://git-scm.com/
+[centos]: https://www.centos.org/
+
 # phase1md5challenge
 
 This source tree contains a [Vagrant][vagrant] configuration which creates a [Centos 7][centos] virtual machine with [cwl-runner][cwlrunner] and all of its needed prerequesites installed. This allows the user to bring up the virtual machine and invoke a few commands to run the md5sum workflow.
