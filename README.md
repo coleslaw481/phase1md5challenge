@@ -35,6 +35,8 @@ cd phase1md5challenge
 
 #### Step 2) Spin up the virtual machine with [Vagrant][vagrant]
 
+Please note this command takes a few minutes since it is setting up a virtual machine.
+
 ```Bash
 vagrant up
 ```
