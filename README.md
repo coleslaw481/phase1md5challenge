@@ -5,6 +5,8 @@
 [git]: https://git-scm.com/
 [centos]: https://www.centos.org/
 [md5sumtool]: https://dockstore.org/containers/quay.io/briandoconnor/dockstore-tool-md5sum
+[license]: https://raw.githubusercontent.com/coleslaw481/phase1md5challenge/master/LICENSE.txt
+
 # phase1md5challenge
 
 This source tree contains a [Vagrant][vagrant] configuration which creates a [Centos 7][centos] virtual machine with [cwl-runner][cwlrunner] and all of its needed prerequesites installed. This allows the user to bring up the virtual machine and invoke a few commands to run the [md5sum workflow][md5sumtool].
@@ -111,5 +113,5 @@ sys	0m0.261s
 
 # COPYRIGHT AND LICENSE
 
-See https://raw.githubusercontent.com/coleslaw481/phase1md5challenge/master/LICENSE.txt
+[See LICENSE.txt][license]
 
