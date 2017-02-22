@@ -111,5 +111,5 @@ sys	0m0.261s
 
 # COPYRIGHT AND LICENSE
 
-See https://raw.githubusercontent.com/coleslaw481/phase1md5challenge/master/License.txt
+See https://raw.githubusercontent.com/coleslaw481/phase1md5challenge/master/LICENSE.txt
 
